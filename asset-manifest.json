@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Deepwave/static/css/main.dd2a0ae4.css",
+    "main.js": "/Deepwave/static/js/main.86270571.js",
+    "static/js/453.3642de2b.chunk.js": "/Deepwave/static/js/453.3642de2b.chunk.js",
+    "static/media/WhatsApp Image 2024-09-23 at 22.35.17_b3db7575.jpg": "/Deepwave/static/media/WhatsApp Image 2024-09-23 at 22.35.17_b3db7575.aca7b41c587abcea16e2.jpg",
+    "static/media/WhatsApp Image 2024-09-29 at 12.43.18_6a870ada.jpg": "/Deepwave/static/media/WhatsApp Image 2024-09-29 at 12.43.18_6a870ada.fffb9a3d290d00094fe1.jpg",
+    "static/media/lineGraph.png": "/Deepwave/static/media/lineGraph.b079a254ce36e46c3021.png",
+    "static/media/download.png": "/Deepwave/static/media/download.ccc9ea933dbc1b7afc1a.png",
+    "static/media/barGraph.png": "/Deepwave/static/media/barGraph.01be62845a0f6b5a7bae.png",
+    "index.html": "/Deepwave/index.html",
+    "main.dd2a0ae4.css.map": "/Deepwave/static/css/main.dd2a0ae4.css.map",
+    "main.86270571.js.map": "/Deepwave/static/js/main.86270571.js.map",
+    "453.3642de2b.chunk.js.map": "/Deepwave/static/js/453.3642de2b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dd2a0ae4.css",
+    "static/js/main.86270571.js"
+  ]
+}
