@@ -1,0 +1,105 @@
+.home-hero {
+    background-color: #27282a;
+    border-radius: 15px;
+    height: 425px; /* Base height */
+    margin: 10px;
+    position: relative;
+    overflow: hidden; /* Ensure content doesn't overflow */
+}
+
+.hero-bg {
+    background-image: url('WhatsApp%20Image%202024-09-23%20at%2022.35.17_b3db7575.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
+    position: absolute; /* Position it absolutely */
+    top: 0;
+    left: 0;
+}
+
+.logo-align {
+    border: 2px solid;
+    border-radius: 50%;
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -90%);
+    width: 150px;
+    z-index: 2;
+}
+
+.hero-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px; /* Base font size */
+    font-weight: 100;
+    transform: translate(-50%);
+    z-index: 2;
+}
+
+.hero-text, .hero-text-bottom {
+    color: #fff;
+    font-weight: 700;
+    left: 50%;
+    padding: 20px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    z-index: 2;
+}
+
+.hero-text-bottom {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px; /* Base font size */
+    transform: translate(-50%, 140%); /* Initial position */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) { /* For larger tablets */
+    .home-hero {
+        height: 350px; /* Reduce height */
+    }
+    .hero-text {
+        font-size: 40px; /* Smaller font size */
+    }
+    .hero-text-bottom {
+        font-size: 16px; /* Adjust bottom text size */
+        transform: translate(-50%, 120%); /* Adjust position */
+    }
+}
+
+@media (max-width: 768px) { /* For tablets and smaller screens */
+    .home-hero {
+        height: 300px; /* Reduce height for smaller screens */
+    }
+    .hero-text {
+        font-size: 30px; /* Smaller font size for text */
+    }
+    .hero-text-bottom {
+        font-size: 14px; /* Smaller font size for bottom text */
+        transform: translate(-50%, 100%); /* Adjust position */
+    }
+    .logo-align {
+        width: 120px; /* Adjust logo size */
+    }
+}
+
+@media (max-width: 480px) { /* For mobile phones */
+    .home-hero {
+        height: 200px; /* Further reduce height for phones */
+        margin: 5px; /* Adjust margin */
+    }
+    .logo-align {
+        width: 100px; /* Smaller logo size */
+    }
+    .hero-text {
+        font-size: 24px; /* Even smaller font size */
+    }
+    .hero-text-bottom {
+        font-size: 12px; /* Adjust bottom text size */
+        transform: translate(-50%, 80%); /* Adjust position further down */
+    }
+}

@@ -1,0 +1,217 @@
+/* General layout for larger screens */
+.home-col1 {
+    display: flex;
+    flex-direction: column;
+}
+
+#home-graph4 {
+    height: 320px;
+    width: 850px; /* Adjusted width */
+    margin-left: 10px;
+    padding-right: 25px;
+}
+
+
+.home-graph {
+    border-radius: 12px;
+    box-shadow: 1px 1px 3px 3px #ccc;
+    height: 300px;
+    margin: 10px;
+    width: 300px;
+}
+
+.home-table-styling {
+    border-collapse: collapse;
+    width: 103%;
+}
+
+table {
+    border-collapse: collapse;
+    border-color: inherit;
+    text-indent: 0;
+}
+
+.home-table-styling th {
+    background-color: #27282a;
+    color: #fff;
+    height: 50px;
+}
+
+.home-table-styling td, .home-table-styling th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.home-table-styling td{
+    height: 50px;
+}
+
+.table-rad-r {
+    border-radius: 15px 0 0 0;
+}
+
+.table-rad-l {
+    border-radius: 0 15px 0 0;
+}
+
+#home-graph3 {
+    width: 95%;
+    height: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ccc;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-left: 20px;
+}
+
+#home-graph5 {
+    margin-top: 3px;
+    height: 250px;
+    width: 300px;
+}
+
+.home-container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+
+#home-graph1{
+    margin-top: 2px;
+    height: 374px;
+    width: 300px;
+    background-image: url(lineGraph.png);
+    background-size: cover;
+}
+
+#home-graph2 {
+    margin-top: 20px;
+    height: 374px;
+    width: 300px;
+    background-image: url(barGraph.png);
+    background-size: contain; 
+     background-repeat: no-repeat;
+     background-position: center; 
+}
+
+#home-graph2 h3{
+    text-align: center;
+    padding-top: 10px;
+    color: #000000;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+/* 
+#home-graph6{
+    margin-top: 20px;
+    height: 250px;
+    width: 300px;
+    background-image: url(download.png);
+    background-size: contain; /* Ensures the whole image is visible */
+    /* background-repeat: no-repeat; /* Prevents the image from repeating */
+    /* background-position: center; Centers the image within the container */
+
+/* 
+#home-graph6 h3{
+    text-align: center;
+    padding-top: 10px;
+    color: #000000;
+    font-size: 16px;
+    font-family: sans-serif;
+} */
+
+#home-graph7{
+    margin-top: 20px;
+    height: 250px;
+    width: 300px;
+    background-image: url(download.png);
+    background-size: contain; /* Ensures the whole image is visible */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the image within the container */
+}
+
+#home-graph7 h3{
+    text-align: center;
+    padding-top: 10px;
+    color: #000000;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+/* For screens with a max width of 768px (common tablet size and smaller) */
+@media screen and (max-width: 768px) {
+
+    .home-container {
+        flex-direction: column; /* Stack items vertically for smaller screens */
+        margin-bottom: 20px;
+    }
+
+    /* Adjust the graph widths for mobile view */
+    #home-graph4,
+    #home-graph3,
+    #home-graph5,
+    #home-graph1,
+    #home-graph2,
+    #home-graph7 {
+        width: 100%; /* Full width for graphs */
+        height: auto; /* Adjust height to auto for better responsiveness */
+        margin-left: 0; /* Center the graphs by removing left margin */
+        padding-right: 0; /* Remove padding for smaller screens */
+    }
+
+    .home-graph {
+        width: 100%; /* Full width */
+        height: auto; /* Allow height to adjust based on content */
+        margin: 10px 0; /* Add margin on top and bottom for spacing */
+    }
+
+    /* Make the table scrollable on mobile */
+    .home-table-styling {
+        width: 100%; /* Full width */
+        overflow-x: auto; /* Enable horizontal scroll if the table is too wide */
+    }
+
+    /* Adjust table headers and cells */
+    .home-table-styling th, .home-table-styling td {
+        padding: 10px;
+        font-size: 14px; /* Smaller font for mobile screens */
+    }
+
+    /* Optional: If space is tight, you can make the text smaller */
+    #home-graph2 h3,
+    #home-graph7 h3 {
+        font-size: 14px; /* Slightly smaller font for headers */
+    }
+}
+
+/* For screens with a max width of 480px (common mobile size) */
+@media screen and (max-width: 480px) {
+
+    .home-container {
+        margin-bottom: 15px;
+    }
+
+    /* Further reduce the size of the graphs */
+    #home-graph4,
+    #home-graph3,
+    #home-graph5,
+    #home-graph1,
+    #home-graph2,
+    #home-graph7 {
+        height: 250px; /* Smaller height on smaller mobile devices */
+    }
+
+    /* Further adjust the table for small screens */
+    .home-table-styling {
+        width: 100%; /* Make sure the table takes up the full width */
+    }
+
+    /* Reduce padding and font size for mobile */
+    .home-table-styling th, .home-table-styling td {
+        padding: 5px;
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,46 @@
+#home-graph5 {
+    height: 250px;
+    margin-bottom: 0;
+    width: 290px;
+    margin: 0 0 0 1200px;
+}
+
+.home-graph {
+    border-radius: 12px;
+    box-shadow: 1px 1px 3px 3px #ccc;
+    height: 300px;
+    margin: 10px;
+    width: 300px;
+}
+
+.home-table-styling {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table {
+    text-indent: 0;
+    border-color: inherit;
+    border-collapse: collapse;
+}
+
+table {
+    border-collapse: collapse;
+    border-color: inherit;
+    text-indent: 0;
+}
+
+.home-table-styling th {
+    background-color: #27282a;
+    color: #fff;
+}
+
+.home-table-styling td, .home-table-styling th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.table-rad-r {
+    border-radius: 15px 0 0 0;
+}

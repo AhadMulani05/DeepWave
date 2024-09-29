@@ -1,0 +1,74 @@
+/* General Styles */
+.home-box-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#box1 {
+    background-color: #ffc13c;
+}
+
+.home-box {
+    align-items: center;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    height: 65px;
+    margin: 10px;
+    width: 364px;
+}
+
+.box-heading {
+    font-size: 25px;
+    font-weight: 700;
+    padding-top: 10px;
+}
+
+.box-subtext {
+    font-size: 15px;
+}
+
+#box2 {
+    background-color: #dea5ce;
+}
+
+#box3 {
+    background-color: #597cf4;
+}
+
+#box4 {
+    background-color: #4cd1a0;
+}
+
+/* Responsive Styles for Mobile Devices */
+@media (max-width: 768px) {
+    .home-box {
+        width: 100%;
+        margin: 5px 0; /* Reduce margin for smaller screens */
+        height: auto; /* Adjust height to auto to fit content */
+    }
+
+    .box-heading {
+        font-size: 20px; /* Slightly smaller font for headings on mobile */
+    }
+
+    .box-subtext {
+        font-size: 13px; /* Slightly smaller font for subtext */
+    }
+}
+
+@media (max-width: 480px) {
+    .home-box {
+        width: 90%; /* Reduce the width for very small screens */
+    }
+
+    .box-heading {
+        font-size: 18px; /* Smaller font size for heading */
+    }
+
+    .box-subtext {
+        font-size: 12px; /* Smaller font size for subtext */
+    }
+}

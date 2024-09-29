@@ -1,0 +1,146 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 10;
+  height: 80px;
+}
+
+/* Logo image styling */
+.logo-img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-image: url('WhatsApp Image 2024-09-29 at 12.43.18_6a870ada.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 5px;
+}
+
+/* Logo text styling */
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+  display: flex;
+  align-items: center;
+  margin-right: 800px;
+}
+
+/* Navigation links container */
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 1.5rem;
+}
+
+.nav-links a {
+  color: #111827;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #068cfa;
+}
+
+/* Hamburger menu icon */
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-bar {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+/* Responsive design for screens under 768px */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 80px; /* Adjusted to align below the navbar */
+    right: 0;
+    background-color: whitesmoke;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 1.5rem 0;
+  }
+
+  .menu-icon {
+    display: flex;
+  }
+
+  .logo {
+    margin-right: 0;
+  }
+}
+
+/* Adjustments for very small screens (like Samsung phones) */
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1.3rem;
+  }
+
+  .nav-links a {
+    font-size: 1rem;
+  }
+
+  .navbar {
+    padding: 0.8rem 1.5rem;
+  }
+
+  .menu-bar {
+    width: 20px;
+  }
+
+  /* Ensure the nav-links are more compact on small screens */
+  .nav-links {
+    top: 60px;
+    width: 100%;
+  }
+
+  .logo-img {
+    width: 40px; /* Slightly smaller logo */
+    height: 40px;
+  }
+}
+
+/* JavaScript (To toggle mobile menu visibility) */
